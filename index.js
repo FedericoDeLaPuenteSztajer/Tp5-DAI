@@ -20,20 +20,16 @@ async function Search() {
         pokeName.textContent = (input.value.toLowerCase()).replace(data.name[0], data.name[0].toUpperCase());
         pokeFoto.src = data.sprites.front_default;
 
-        /**
-        let realTypes="";
-        (data.types).forEach((t, i) => {
-            if(i>0){realTypes+"/"}
-            realTypes=+(t.type.name)
-        })
-        */
-
         pokeTypes.textContent = `Tipos: ${data.types.map(t => t.type.name).join(" / ")}`;
         weight.textContent = `Peso: ${data.weight}`;
         height.textContent = `Altura: ${data.height}`;
 
     } catch (e) {
-        throw e;
+        pokeName.textContent = "Pokemon no Enconctrado";
+        pokeFoto.src = "";
+        pokeTypes.textContent = "";
+        weight.textContent = "";
+        height.textContent = "";
     }
 
 }
