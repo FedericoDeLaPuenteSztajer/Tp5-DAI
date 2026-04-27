@@ -12,43 +12,23 @@
 
 <body>
     <div class="search zone">
-        <img src="https://logos-world.net/wp-content/uploads/2020/05/Pokemon-Symbol.jpg"/>
+        <img src="https://logos-world.net/wp-content/uploads/2020/05/Pokemon-Symbol.jpg" />
         <div class="searchBar">
             <input id="userinput" class="searchTerm" type="text" placeholder="Escribi el nombre o id">
             <button type="button" onclick="Search()" class="searchButton" id="search"> Search</button>
         </div>
     </div>
-    <div class="pokemon zone">
-        <h1></h1>
+    <div class="pokemon">
+        <h1 id="pokeName">name</h1>
+        <div class="stats">
+            <img id="pokeFoto" src="">
+            <p id="pokeTypes">a</p>
+            <p id="weight">a</p>
+            <p id="height">a</p>
+        </div>
     </div>
 
     <script src="index.js"></script>
 </body>
 
 </html>
-
-<!--
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="site.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-
-    <main>
-        <form onSubmit={submit}>
-            <label>Nombre o Número de Pokedex: </label>
-            <input type="text" name="mascota" className="u-full-width" placeholder="Nombre Mascota" required />
-            <button type="submit" className="u-full-width button-primary">Agregar Cita</button>
-        </form>
-    </main>
-
-    <script src="logic.js"></script>
-</body>
-
-</html>
--->

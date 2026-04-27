@@ -143,25 +143,5 @@ button {
   }
 }
 
+/*MINE ALL MINE NYE JEJEJEJE*/
 
-/*FOOTER*/
-.footer {
-    font-size: calc(0.5rem + 0.5vw);
-    margin: 0;
-    color: #FCCF00;
-    font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  color: #FCCF00;
-  margin: 0;
-}
-
-a:hover{
-  color:  #2468B1; ;
-}
-
-.reference { /*reference to logo*/
-  font-size: calc(0.4rem + 0.5vw);
-}
