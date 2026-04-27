@@ -17,11 +17,20 @@ async function Search() {
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
 
-        pokeName.textContent= data.name;
-        pokeFoto.src= data.sprites.front_default;
-        pokeTypes.textContent= data.types[0] +"/"+ data.types[1];
-        weight.textContent= data.weight;
-        height.textContent= data.height;
+        pokeName.textContent = (input.value.toLowerCase()).replace(data.name[0], data.name[0].toUpperCase());
+        pokeFoto.src = data.sprites.front_default;
+
+        /**
+        let realTypes="";
+        (data.types).forEach((t, i) => {
+            if(i>0){realTypes+"/"}
+            realTypes=+(t.type.name)
+        })
+        */
+
+        pokeTypes.textContent = `Tipos: ${data.types.map(t => t.type.name).join(" / ")}`;
+        weight.textContent = `Peso: ${data.weight}`;
+        height.textContent = `Altura: ${data.height}`;
 
     } catch (e) {
         throw e;

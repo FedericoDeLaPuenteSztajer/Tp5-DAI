@@ -91,6 +91,12 @@ button {
     grid-template-areas: 
     'details stats stats';
 }
+
+.pokemon img{
+  width: 35%;
+  height: auto;
+}
+
 #initial { /*WHEN NO POKEMON IS LOADED YET*/
   align-items: center;
   align-content: center;
